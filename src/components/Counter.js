@@ -52,7 +52,7 @@ import React, { useState } from 'react'; /* STEP 0 */
 export default function Counter() {
   /* STEP 1 */
   const [ count, setCount ] = useState(0);
-  
+
   const increment = () => {
     /* STEP 4 */
   };
@@ -66,7 +66,7 @@ export default function Counter() {
   const style = {
     fontSize: '1.5em',
     marginBottom: '0.3em',
-    color: 'royalblue', /* STEP 2 */
+    color: ( count % 2 == 0 ? 'green' : 'crimson'), /* STEP 2 */
   };
 
   return (
